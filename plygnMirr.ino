@@ -35,7 +35,7 @@ void nextline(){
 void loop() {
  pulse=times/22;
 for(int i=0;i<10;i++){
-  if(pxl[i]==1){
+  if(pxl[i]=='1'){
     digitalWrite(4,HIGH);
     delayMicroseconds(pulse);
   }

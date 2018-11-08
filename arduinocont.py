@@ -19,9 +19,11 @@ while run:
     red=int(s.read(1))
     if red==8:
         pxln=pxlLine.read(11)
+        print(pxln)
         if pxln[0]=='4':
             run=0
         else:
                 s.write(pxln.encode())
+                print(pxln)
     
 s.close()
